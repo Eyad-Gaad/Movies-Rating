@@ -1,0 +1,11 @@
+<!-- Popular Component -->
+<section class="mt-5 pt-5">
+    <h1 class="text-center fw-bold sansFont txCommon mb-4">Popular</h1>
+    <div class="container">
+        <div class="row gy-4">
+           @for (movie of movies; track movie.id) {
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3"><app-card [movie]="movie"></app-card></div>
+           }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,15 @@
+<!-- Card Component -->
+<div class="card-hover position-relative h-100 overflow-hidden">
+    <div class="h-100 border rounded-3 shadow-lg bgCommon text-white text-center">
+        <div class="position-relative">
+            <p class="description m-0 p-0 text-start position-absolute top-0 z-2 p-2">{{movie.overview}}</p>
+                <img [src]="imgPath+movie.backdrop_path" class="img-fluid rounded-top-3" [alt]="movie.title">
+                <span class="rounded-circle p-1 text-white position-absolute bottom-0 start-50 transform"[class]='{"bg-success":movie.vote_average*10>=75&&movie.vote_average*10<=100,"bg-warning":movie.vote_average*10>=50&&movie.vote_average*10<75,"bgTomato":movie.vote_average*10>=25&&movie.vote_average*10<50,"bg-danger":movie.vote_average*10>=0&&movie.vote_average*10<25}'>{{(movie.vote_average*10).toPrecision(2)}}%</span>
+        </div>
+        <div class="px-2 mt-4 d-flex flex-column row-gap-sm-1 row-gap-md-2 row-gap-lg-3">
+            <h2 class="mt-2 mb-0 fs-4 fw-semibold sansFont">{{movie.title}}</h2>
+            <p>{{date.toDateString()}}</p>
+        </div>
+    </div>
+    
+</div>

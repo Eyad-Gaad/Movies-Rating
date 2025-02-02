@@ -1,0 +1,57 @@
+/* CSS Global Variables and Classes */
+:root{
+    --Common :#092943;
+    --sansFont : "Source Sans 3", serif;
+}
+.bgCommon{
+    background-color: var(--Common);
+}
+.bgTomato{
+    background-color: tomato;
+}
+.txCommon{
+    color: var(--Common);
+}
+.sansFont{
+    font-family: var(--sansFont);
+}
+.link-hover:hover{
+    background-color: white !important;
+    color: var(--Common) !important;
+    transition: all 0.5s;
+}
+.link-routing{
+    background-color: white !important;
+    color: var(--Common) !important;
+}
+.card-hover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--Common) !important;
+    border-radius: 0.6rem;
+    opacity: 0;
+}
+.card-hover{
+    cursor: pointer;
+    transition: all 0.6s;
+}
+.card-hover:hover{
+    transform: scale(1.1);
+}
+.card-hover::after{
+    transition: all 0.6s;
+}
+.card-hover:hover::after{
+    opacity: 0.5;
+}
+.description{
+    color: rgba(255, 255, 255, 0) !important;
+    transition: all 0.6s;
+}
+.card-hover:hover .description{
+    color: white !important;
+}

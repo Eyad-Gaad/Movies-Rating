@@ -1,0 +1,24 @@
+.fa-facebook{
+    transition: all 0.2s;
+}
+.fa-facebook:hover{
+    color: blue !important;
+}
+.fa-instagram{
+    transition: all 0.2s;
+}
+.fa-instagram:hover{
+    color: rgb(216, 51, 51) !important;
+}
+.fa-x-twitter{
+    transition: all 0.2s;
+}
+.fa-x-twitter:hover{
+    color: black !important;
+}
+.fa-youtube{
+    transition: all 0.2s;
+}
+.fa-youtube:hover{
+    color: red !important;
+}

@@ -1,0 +1,10 @@
+.navbar-toggler-icon{
+    background-image: url(/Images/Hamburger_icon_white.svg.png) !important;
+}
+.navbar-toggler{
+    border: solid 0.2rem white !important;
+}
+nav{
+    transition: all 0.3s;
+}
+
